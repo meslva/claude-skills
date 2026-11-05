@@ -1,0 +1,9 @@
+# 올리지 않는 스킬·폴더
+/resume/
+/.trash/
+/synced/
+
+# 시스템·캐시 파일
+.DS_Store
+__pycache__/
+*.pyc

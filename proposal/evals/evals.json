@@ -1,0 +1,40 @@
+{
+  "skill_name": "proposal",
+  "evals": [
+    {
+      "id": 1,
+      "name": "analysis-glovis",
+      "prompt": "/제안서 분석 — 이 폴더에 있는 현대글로비스 오토비즈 RFP랑 요구사항 엑셀 분석해줘. 제출일은 아직 몰라.",
+      "expected_output": "제안작업/01_분석/에 분석보고서.md(16개 장 구성, [사실]/[해석]/[가정]/[질의] 표기), 요구사항매트릭스.xlsx(샘플 행 제외 266건, 집계 시트), 용어사전.md('쉽게 말하면' 머리말 없음). 이미지 페이지(구성도 p15, 간트 p12, I/F p40)를 읽고 간트 라벨 불일치, 과제 분류 불일치, 플랫폼 경매 미정의 규칙을 찾아낸다. 관문 A에서 멈춘다.",
+      "files": ["현대글로비스 오토비즈 핵심 서비스 고도화 프로젝트 제안요청서_v1.0.pdf", "현대글로비스 오토비즈 핵심 서비스 고도화 요구사항_260918.xlsx"]
+    },
+    {
+      "id": 2,
+      "name": "questions-glovis",
+      "prompt": "/제안서 질의 내일 설명회야. 질의서 만들어줘",
+      "expected_output": "02_질의/질의서.xlsx에 질의서(발송용 격식 존댓말)·설명회 질의(★ 5개, 말로 읽을 문장, 기록 칸)·내부관리(쉬운 말 4칸 설명, 집계 수식)·작성 안내 시트. 발송 전 내부 시트 제거 안내.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "storyboard-chapter2-infra",
+      "prompt": "/제안서 원고 2장 인프라 전환 부분만 먼저 써줘",
+      "expected_output": "04_원고/2장_*.md에 형식을 지킨 장표 블록(헤드메시지 문장, 개조식 본문, 도식 유형, 근거, 대응 키). 모든 장표가 Hazelcast·able·Tiles·OpenJFX 등 이 사업 고유 사실에 연결되고 모호 표현이 없다. review_storyboard.py 결과를 함께 보고한다.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "ppt-5-slides",
+      "prompt": "/제안서 ppt 2장 앞부분 5장만 먼저 만들어봐. 템플릿은 아직 없어",
+      "expected_output": "05_PPT/build_deck.py와 제안서_v1.pptx. 텍스트만 있는 장표가 없고 장표마다 다른 도식(timeline, table+callout, layers, compare 등). render_pptx.ps1로 렌더링해 겹침·넘침을 확인하고 고친 기록. 임시 디자인임을 알린다.",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "review-gate-d",
+      "prompt": "/제안서 검수",
+      "expected_output": "06_검수/검수보고서.md, 추적표.xlsx, 완성도점검표.md. 누락 키, 모호 표현, 태그, 도식 없음, 수치 불일치를 보고하고 우선 보강 3곳을 제시한 뒤 관문 D에서 멈춘다.",
+      "files": []
+    }
+  ]
+}
