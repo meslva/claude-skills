@@ -18,9 +18,10 @@ md 파일은 형식이 정해져 있고, 기존 파일도 모두 이 형식으�
 ## 실행 방법
 
 ```bash
-python3 ~/.claude/skills/pdf2md/scripts/import_pdf.py "<PDF 경로>" ["<PDF 경로>" ...]
+python3 <이 스킬 폴더>/scripts/import_pdf.py "<PDF 경로>" ["<PDF 경로>" ...]
 ```
 
+- `<이 스킬 폴더>`는 이 SKILL.md가 있는 폴더다 (git clone 설치면 `~/.claude/skills/pdf2md`, 플러그인 설치면 플러그인 캐시 안의 `pdf2md`).
 - 스크립트가 PDF를 `pdf/`에 복사(파일명 유지)하고 `md/<같은 이름>.md`를 생성한다.
 - `--root DIR`: 아카이브 위치가 다를 때만 지정한다(기본값 `~/Desktop/이전제안서`).
 - `--force`: 같은 이름이 이미 있을 때 덮어쓴다. **사용자가 덮어써도 된다고 확인한 경우에만** 붙인다. 기존 md를 사람이 손봤을 수 있기 때문이다.

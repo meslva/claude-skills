@@ -13,6 +13,19 @@
 
 ## 설치
 
+**플러그인으로 설치 (권장)**
+
+Claude Code에서 아래 두 명령을 실행합니다. 세 스킬이 한꺼번에 설치됩니다.
+
+```
+/plugin marketplace add meslva/claude-skills
+/plugin install proposal-skills@meslva-skills
+```
+
+스킬을 고쳐 push한 뒤 다른 컴퓨터에서 받을 때는 `/plugin marketplace update meslva-skills`를 실행합니다.
+
+**git clone으로 설치**
+
 스킬은 `~/.claude/skills/` 아래에 있어야 Claude Code가 인식합니다.
 
 **스킬 폴더가 비어 있는 새 컴퓨터**

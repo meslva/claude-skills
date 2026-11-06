@@ -1,0 +1,23 @@
+{
+  "name": "meslva-skills",
+  "owner": {
+    "name": "meslva"
+  },
+  "metadata": {
+    "description": "제안서 작성과 이전 제안서 아카이브 관리를 위한 스킬 모음",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "proposal-skills",
+      "description": "RFP로 기술 제안서를 만드는 proposal·제안서 스킬과, 제안서 PDF를 Markdown 아카이브로 정리하는 pdf2md 스킬",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./proposal",
+        "./제안서",
+        "./pdf2md"
+      ]
+    }
+  ]
+}

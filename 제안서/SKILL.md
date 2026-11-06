@@ -9,7 +9,7 @@ argument-hint: "[착수|분석|질의|전략|원고 [N장]|ppt [N장] [밀도=1~
 
 이 명령은 `proposal` 스킬과 같다. 아래 파일을 읽고 그 지침을 그대로 따른다.
 
-- 스킬 본체: `C:\Users\NB-124\.claude\skills\proposal\SKILL.md` (다른 PC에서는 `~/.claude/skills/proposal/SKILL.md`)
-- 스킬 폴더(스크립트·참고 파일 경로의 기준): `C:\Users\NB-124\.claude\skills\proposal\`
+- 스킬 본체: 이 스킬 폴더 옆의 `../proposal/SKILL.md` (이 SKILL.md가 있는 폴더 기준)
+- 스킬 폴더(스크립트·참고 파일 경로의 기준): `../proposal/`
 
 이번 호출의 인자: `$ARGUMENTS`
